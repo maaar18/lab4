@@ -7,9 +7,9 @@ public class Lab4 {
         Scanner sc = new Scanner(System.in);
         int x = 0;
 
-        System.out.println("Enter a first element: "); //Initialising array
+        System.out.println("Enter a first element: ");
         while (!sc.hasNext("quit")) {
-            if (sc.hasNextInt()){
+            if (sc.hasNextInt()) {
                 array = Arrays.copyOf(array, array.length + 1);
                 array[array.length - 1] = sc.nextInt();
                 System.out.println("Enter another integer element or type quit:");
